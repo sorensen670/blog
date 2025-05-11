@@ -3,8 +3,10 @@ package com.mjs.blog.model;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name = "blog_user")
 public class User {
     @Id
     @GeneratedValue

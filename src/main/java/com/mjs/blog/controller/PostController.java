@@ -16,8 +16,8 @@ public class PostController {
     }
 
     @PostMapping
-    public Post createPost(@RequestBody Post post) {
-        return postService.createPost(post);
+    public Post createPost(@RequestBody Post post, Long userId) {
+        return postService.createPost(post, userId);
     }
 
     @GetMapping

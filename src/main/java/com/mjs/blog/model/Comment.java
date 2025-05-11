@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 @Entity
 public class Comment {
     @Id @GeneratedValue
-    private Long Id;
+    private Long id;
     private String textMarkdown;
     private LocalDateTime createdAt;
 
@@ -22,7 +22,7 @@ public class Comment {
     private User commenter;
 
     public Long getId() {
-        return Id;
+        return id;
     }
     public String getMarkdown() {
         return textMarkdown;
